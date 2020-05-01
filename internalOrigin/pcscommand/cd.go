@@ -3,7 +3,7 @@ package pcscommand
 import (
 	"fmt"
 	"github.com/iikira/BaiduPCS-Go/baidupcs"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
 )
 
 // RunChangeDirectory 执行更改工作目录

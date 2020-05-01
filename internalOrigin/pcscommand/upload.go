@@ -3,8 +3,8 @@ package pcscommand
 import (
 	"fmt"
 	"github.com/iikira/BaiduPCS-Go/baidupcs"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsfunctions/pcsupload"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsfunctions/pcsupload"
 	"github.com/iikira/BaiduPCS-Go/pcstable"
 	"github.com/iikira/BaiduPCS-Go/pcsutil"
 	"github.com/iikira/BaiduPCS-Go/pcsutil/checksum"
