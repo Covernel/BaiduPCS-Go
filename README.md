@@ -1,3 +1,10 @@
+# Fork 说明
+
+作出修改以方便外部引用:
+
+- 删除未使用的空的 `internal/pcsinit/pcsinit.s`
+- 重命名: `internal` -> `internalOrigin`
+
 # BaiduPCS-Go 百度网盘客户端
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nhx92nqyrfq9su7y?svg=true)](https://ci.appveyor.com/project/iikira/baidupcs-go)
