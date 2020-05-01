@@ -2,13 +2,13 @@ package pcsupload
 
 import (
 	"context"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/internalOrigin/pcsconfig"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/multipartreader"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/uploader"
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
+	"github.com/iikira/BaiduPCS-Go/requester"
+	"github.com/iikira/BaiduPCS-Go/requester/multipartreader"
+	"github.com/iikira/BaiduPCS-Go/requester/rio"
+	"github.com/iikira/BaiduPCS-Go/requester/uploader"
 	"io"
 	"net/http"
 )
