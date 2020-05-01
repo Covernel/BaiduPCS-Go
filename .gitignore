@@ -31,3 +31,5 @@ download/
 
 # GoLand
 .idea/
+
+go.sum
