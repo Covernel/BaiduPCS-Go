@@ -3,7 +3,7 @@ package pcscommand
 
 import (
 	"github.com/iikira/BaiduPCS-Go/baidupcs"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
 	"github.com/iikira/BaiduPCS-Go/pcsverbose"
 )
 

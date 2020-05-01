@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/iikira/Baidu-Login"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsfunctions/pcscaptcha"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsfunctions/pcscaptcha"
 	"github.com/iikira/BaiduPCS-Go/pcsliner"
 	"github.com/iikira/BaiduPCS-Go/requester"
 	"image/png"

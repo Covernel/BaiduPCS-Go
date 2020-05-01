@@ -5,7 +5,7 @@ import (
 	"archive/zip"
 	"bytes"
 	"fmt"
-	"github.com/iikira/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
 	"github.com/iikira/BaiduPCS-Go/pcsliner"
 	"github.com/iikira/BaiduPCS-Go/pcsutil"
 	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
