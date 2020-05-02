@@ -3,9 +3,9 @@ package pcsconfig
 import (
 	"errors"
 	"fmt"
-	"github.com/iikira/BaiduPCS-Go/baidupcs"
-	"github.com/iikira/BaiduPCS-Go/pcstable"
-	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"github.com/iikira/baidu-tools/tieba"
 	"github.com/olekukonko/tablewriter"
 	"path"

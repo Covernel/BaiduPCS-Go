@@ -2,7 +2,7 @@ package checksum_test
 
 import (
 	"fmt"
-	"github.com/iikira/BaiduPCS-Go/pcsutil/checksum"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/checksum"
 	"testing"
 )
 

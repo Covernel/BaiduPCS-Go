@@ -2,11 +2,11 @@
 package uploader
 
 import (
-	"github.com/iikira/BaiduPCS-Go/pcsutil"
-	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
-	"github.com/iikira/BaiduPCS-Go/pcsverbose"
-	"github.com/iikira/BaiduPCS-Go/requester"
-	"github.com/iikira/BaiduPCS-Go/requester/rio"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
+	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
+	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio"
 	"net/http"
 	"time"
 )
