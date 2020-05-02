@@ -2,9 +2,9 @@ package pcscommand
 
 import (
 	"fmt"
-	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
-	"github.com/iikira/BaiduPCS-Go/pcstable"
-	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/Denis-Oakley/BaiduPCS-Go/internalOrigin/pcsconfig"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"os"
 	"strconv"
 )

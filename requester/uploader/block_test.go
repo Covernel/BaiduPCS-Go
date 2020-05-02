@@ -2,10 +2,10 @@ package uploader_test
 
 import (
 	"fmt"
-	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/iikira/BaiduPCS-Go/requester/rio"
-	"github.com/iikira/BaiduPCS-Go/requester/transfer"
-	"github.com/iikira/BaiduPCS-Go/requester/uploader"
+	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio"
+	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
+	"github.com/Denis-Oakley/BaiduPCS-Go/requester/uploader"
 	"io"
 	"testing"
 )

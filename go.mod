@@ -1,4 +1,4 @@
-module github.com/iikira/BaiduPCS-Go
+module github.com/Denis-Oakley/BaiduPCS-Go
 
 go 1.12
 
