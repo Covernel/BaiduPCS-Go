@@ -3,18 +3,19 @@ package baidupcs
 import (
 	"bytes"
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/netdisksign"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/multipartreader"
-	"github.com/iikira/baidu-tools/tieba"
-	"github.com/json-iterator/go"
 	"io"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
 	"unsafe"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/netdisksign"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/iikira/BaiduPCS-Go/requester/multipartreader"
+	"github.com/iikira/baidu-tools/tieba"
+	"github.com/json-iterator/go"
 )
 
 type (
@@ -360,10 +361,10 @@ func (pcs *BaiduPCS) PrepareLocatePanAPIDownload(fidList ...int64) (dataReadClos
 // PrepareUpload 上传单个文件, 只返回服务器响应数据和错误信息
 func (pcs *BaiduPCS) PrepareUpload(targetPath string, uploadFunc UploadFunc) (dataReadCloser io.ReadCloser, pcsError pcserror.Error) {
 	pcs.lazyInit()
-	pcsError = pcs.checkIsdir(OperationUpload, targetPath)
-	if pcsError != nil {
-		return nil, pcsError
-	}
+	// pcsError = pcs.checkIsdir(OperationUpload, targetPath)
+	// if pcsError != nil {
+	// 	return nil, pcsError
+	// }
 
 	pcsURL := pcs.generatePCSURL("file", "upload", map[string]string{
 		"path":  targetPath,

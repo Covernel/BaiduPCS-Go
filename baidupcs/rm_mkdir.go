@@ -1,8 +1,7 @@
 package baidupcs
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"path"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
 )
 
 // Remove 批量删除文件/目录
@@ -20,7 +19,7 @@ func (pcs *BaiduPCS) Remove(paths ...string) (pcsError pcserror.Error) {
 	}
 
 	// 更新缓存
-	pcs.deleteCache(allRelatedDir(paths))
+	// pcs.deleteCache(allRelatedDir(paths))
 	return nil
 }
 
@@ -39,6 +38,6 @@ func (pcs *BaiduPCS) Mkdir(pcspath string) (pcsError pcserror.Error) {
 	}
 
 	// 更新缓存
-	pcs.deleteCache([]string{path.Dir(pcspath)})
+	// pcs.deleteCache([]string{path.Dir(pcspath)})
 	return
 }

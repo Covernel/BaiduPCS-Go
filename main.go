@@ -3,6 +3,16 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
+	"os"
+	"os/exec"
+	"path"
+	"path/filepath"
+	"runtime"
+	"sort"
+	"strconv"
+	"strings"
+	"unicode"
+
 	"github.com/iikira/BaiduPCS-Go/baidupcs"
 	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcscommand"
 	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
@@ -22,15 +32,6 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/peterh/liner"
 	"github.com/urfave/cli"
-	"os"
-	"os/exec"
-	"path"
-	"path/filepath"
-	"runtime"
-	"sort"
-	"strconv"
-	"strings"
-	"unicode"
 )
 
 const (
@@ -75,19 +76,19 @@ var (
 	isCli bool
 )
 
-func init() {
-	pcsutil.ChWorkDir()
-
-	err := pcsconfig.Config.Init()
-	switch err {
-	case nil:
-	case pcsconfig.ErrConfigFileNoPermission, pcsconfig.ErrConfigContentsParseError:
-		fmt.Fprintf(os.Stderr, "FATAL ERROR: config file error: %s\n", err)
-		os.Exit(1)
-	default:
-		fmt.Printf("WARNING: config init error: %s\n", err)
-	}
-}
+// func init() {
+// 	pcsutil.ChWorkDir()
+//
+// 	err := pcsconfig.Config.Init()
+// 	switch err {
+// 	case nil:
+// 	case pcsconfig.ErrConfigFileNoPermission, pcsconfig.ErrConfigContentsParseError:
+// 		fmt.Fprintf(os.Stderr, "FATAL ERROR: config file error: %s\n", err)
+// 		os.Exit(1)
+// 	default:
+// 		fmt.Printf("WARNING: config init error: %s\n", err)
+// 	}
+// }
 
 func main() {
 	defer pcsconfig.Config.Close()

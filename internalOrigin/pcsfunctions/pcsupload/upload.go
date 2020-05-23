@@ -2,15 +2,15 @@ package pcsupload
 
 import (
 	"context"
+	"io"
+	"net/http"
+
 	"github.com/iikira/BaiduPCS-Go/baidupcs"
 	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/iikira/BaiduPCS-Go/internalOrigin/pcsconfig"
 	"github.com/iikira/BaiduPCS-Go/requester"
 	"github.com/iikira/BaiduPCS-Go/requester/multipartreader"
 	"github.com/iikira/BaiduPCS-Go/requester/rio"
 	"github.com/iikira/BaiduPCS-Go/requester/uploader"
-	"io"
-	"net/http"
 )
 
 type (
@@ -54,29 +54,29 @@ func (pu *PCSUpload) TmpFile(ctx context.Context, partseq int, partOffset int64,
 
 	var respErr *uploader.MultiError
 	checksum, pcsError := pu.pcs.UploadTmpFile(func(uploadURL string, jar http.CookieJar) (resp *http.Response, err error) {
-		client := pcsconfig.Config.PCSHTTPClient()
-		client.SetCookiejar(jar)
-		client.SetTimeout(0)
+		// client := pcsconfig.Config.PCSHTTPClient()
+		// client.SetCookiejar(jar)
+		// client.SetTimeout(0)
 
 		mr := multipartreader.NewMultipartReader()
 		mr.AddFormFile("uploadedfile", "", r)
 		mr.CloseMultipart()
 
 		doneChan := make(chan struct{}, 1)
-		go func() {
-			resp, err = client.Req(http.MethodPost, uploadURL, mr, nil)
-			doneChan <- struct{}{}
-
-			if resp != nil {
-				// 不可恢复的错误
-				switch resp.StatusCode {
-				case 400, 401, 403, 413:
-					respErr = &uploader.MultiError{
-						Terminated: true,
-					}
-				}
-			}
-		}()
+		// go func() {
+		// 	resp, err = client.Req(http.MethodPost, uploadURL, mr, nil)
+		// 	doneChan <- struct{}{}
+		//
+		// 	if resp != nil {
+		// 		// 不可恢复的错误
+		// 		switch resp.StatusCode {
+		// 		case 400, 401, 403, 413:
+		// 			respErr = &uploader.MultiError{
+		// 				Terminated: true,
+		// 			}
+		// 		}
+		// 	}
+		// }()
 		select {
 		case <-ctx.Done(): // 取消
 			// 返回, 让那边关闭连接

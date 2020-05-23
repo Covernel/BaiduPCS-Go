@@ -2,16 +2,9 @@ package pcsconfig
 
 import (
 	"errors"
-	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/iikira/baidu-tools/tieba"
-	"github.com/olekukonko/tablewriter"
 	"path"
-	"path/filepath"
-	"strconv"
-	"strings"
+
+	"github.com/iikira/baidu-tools/tieba"
 )
 
 var (
@@ -41,26 +34,26 @@ type Baidu struct {
 }
 
 // BaiduPCS 初始化*baidupcs.BaiduPCS
-func (baidu *Baidu) BaiduPCS() *baidupcs.BaiduPCS {
-	pcs := baidupcs.NewPCS(Config.AppID, baidu.BDUSS)
-	pcs.SetStoken(baidu.STOKEN)
-	pcs.SetHTTPS(Config.EnableHTTPS)
-	pcs.SetPCSUserAgent(Config.PCSUA)
-	pcs.SetPanUserAgent(Config.PanUA)
-	pcs.SetUID(baidu.UID)
-	return pcs
-}
+// func (baidu *Baidu) BaiduPCS() *baidupcs.BaiduPCS {
+// 	pcs := baidupcs.NewPCS(Config.AppID, baidu.BDUSS)
+// 	pcs.SetStoken(baidu.STOKEN)
+// 	pcs.SetHTTPS(Config.EnableHTTPS)
+// 	pcs.SetPCSUserAgent(Config.PCSUA)
+// 	pcs.SetPanUserAgent(Config.PanUA)
+// 	pcs.SetUID(baidu.UID)
+// 	return pcs
+// }
 
 // GetSavePath 根据提供的网盘文件路径 pcspath, 返回本地储存路径,
 // 返回绝对路径, 获取绝对路径出错时才返回相对路径...
-func (baidu *Baidu) GetSavePath(pcspath string) string {
-	dirStr := filepath.Join(Config.SaveDir, fmt.Sprintf("%d_%s", baidu.UID, converter.TrimPathInvalidChars(baidu.Name)), pcspath)
-	dir, err := filepath.Abs(dirStr)
-	if err != nil {
-		dir = filepath.Clean(dirStr)
-	}
-	return dir
-}
+// func (baidu *Baidu) GetSavePath(pcspath string) string {
+// 	dirStr := filepath.Join(Config.SaveDir, fmt.Sprintf("%d_%s", baidu.UID, converter.TrimPathInvalidChars(baidu.Name)), pcspath)
+// 	dir, err := filepath.Abs(dirStr)
+// 	if err != nil {
+// 		dir = filepath.Clean(dirStr)
+// 	}
+// 	return dir
+// }
 
 // PathJoin 合并工作目录和相对路径p, 若p为绝对路径则忽略
 func (baidu *Baidu) PathJoin(p string) string {
@@ -94,18 +87,18 @@ func NewUserInfoByBDUSS(bduss string) (b *Baidu, err error) {
 }
 
 // String 格式输出百度帐号列表
-func (bl *BaiduUserList) String() string {
-	builder := &strings.Builder{}
-
-	tb := pcstable.NewTable(builder)
-	tb.SetColumnAlignment([]int{tablewriter.ALIGN_DEFAULT, tablewriter.ALIGN_RIGHT, tablewriter.ALIGN_CENTER, tablewriter.ALIGN_CENTER, tablewriter.ALIGN_CENTER})
-	tb.SetHeader([]string{"#", "uid", "用户名", "性别", "age"})
-
-	for k, baiduInfo := range *bl {
-		tb.Append([]string{strconv.Itoa(k), strconv.FormatUint(baiduInfo.UID, 10), baiduInfo.Name, baiduInfo.Sex, fmt.Sprint(baiduInfo.Age)})
-	}
-
-	tb.Render()
-
-	return builder.String()
-}
+// func (bl *BaiduUserList) String() string {
+// 	builder := &strings.Builder{}
+//
+// 	tb := pcstable.NewTable(builder)
+// 	tb.SetColumnAlignment([]int{tablewriter.ALIGN_DEFAULT, tablewriter.ALIGN_RIGHT, tablewriter.ALIGN_CENTER, tablewriter.ALIGN_CENTER, tablewriter.ALIGN_CENTER})
+// 	tb.SetHeader([]string{"#", "uid", "用户名", "性别", "age"})
+//
+// 	for k, baiduInfo := range *bl {
+// 		tb.Append([]string{strconv.Itoa(k), strconv.FormatUint(baiduInfo.UID, 10), baiduInfo.Name, baiduInfo.Sex, fmt.Sprint(baiduInfo.Age)})
+// 	}
+//
+// 	tb.Render()
+//
+// 	return builder.String()
+// }
