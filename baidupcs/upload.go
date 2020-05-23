@@ -2,10 +2,10 @@ package baidupcs
 
 import (
 	"errors"
+	"net/http"
+
 	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
 	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
-	"net/http"
-	"path"
 )
 
 const (
@@ -97,7 +97,7 @@ func (pcs *BaiduPCS) RapidUpload(targetPath, contentMD5, sliceMD5, crc32 string,
 	}
 
 	// 更新缓存
-	pcs.deleteCache([]string{path.Dir(targetPath)})
+	// pcs.deleteCache([]string{path.Dir(targetPath)})
 	return nil
 }
 
@@ -144,7 +144,7 @@ func (pcs *BaiduPCS) Upload(targetPath string, uploadFunc UploadFunc) (pcsError 
 	}
 
 	// 更新缓存
-	pcs.deleteCache([]string{path.Dir(targetPath)})
+	// pcs.deleteCache([]string{path.Dir(targetPath)})
 	return nil
 }
 
@@ -192,7 +192,7 @@ func (pcs *BaiduPCS) UploadCreateSuperFile(checkDir bool, targetPath string, blo
 	}
 
 	// 更新缓存
-	pcs.deleteCache([]string{path.Dir(targetPath)})
+	// pcs.deleteCache([]string{path.Dir(targetPath)})
 	return nil
 }
 

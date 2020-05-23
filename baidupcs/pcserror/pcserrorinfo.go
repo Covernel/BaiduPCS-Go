@@ -95,6 +95,7 @@ func (pcse *PCSErrInfo) Error() string {
 
 		return fmt.Sprintf("%s, 遇到错误, %s", pcse.Operation, pcse.Err)
 	default:
+		fmt.Printf("%#v\n", pcse)
 		panic("pcserrorinfo: unknown ErrType")
 	}
 }
