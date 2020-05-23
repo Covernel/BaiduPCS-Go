@@ -2,10 +2,11 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"net/http"
 	"net/url"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 var (

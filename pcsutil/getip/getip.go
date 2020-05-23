@@ -2,10 +2,11 @@
 package getip
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
 	"net"
 	"net/http"
 	"unsafe"
+
+	"github.com/iikira/BaiduPCS-Go/requester"
 )
 
 // IPInfoByClient 给定client获取ip地址

@@ -4,18 +4,19 @@ package downloader
 import (
 	"context"
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/prealloc"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/waitgroup"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio/speeds"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
 	"io"
 	"net/http"
 	"sync"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/prealloc"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/waitgroup"
+	"github.com/iikira/BaiduPCS-Go/pcsverbose"
+	"github.com/iikira/BaiduPCS-Go/requester"
+	"github.com/iikira/BaiduPCS-Go/requester/rio/speeds"
+	"github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 const (

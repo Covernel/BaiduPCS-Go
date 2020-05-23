@@ -1,10 +1,11 @@
 package pcsdownload
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
 	"net/http"
 	"strconv"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
+	"github.com/iikira/BaiduPCS-Go/requester"
 )
 
 // IsSkipMd5Checksum 是否忽略某些校验

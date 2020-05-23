@@ -2,14 +2,15 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/pcstime"
 	"io"
 	"path"
 	"strconv"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcstable"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/pcstime"
 )
 
 type (

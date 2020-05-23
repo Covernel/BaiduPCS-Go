@@ -2,11 +2,12 @@ package pcscommand
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
 	"os"
 	"path"
 	"strconv"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
+	"github.com/iikira/BaiduPCS-Go/pcstable"
 )
 
 // RunShareSet 执行分享

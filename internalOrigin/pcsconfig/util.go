@@ -1,8 +1,9 @@
 package pcsconfig
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 // AverageParallel 返回平均的下载最大并发量

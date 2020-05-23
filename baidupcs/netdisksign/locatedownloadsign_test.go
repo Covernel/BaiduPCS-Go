@@ -1,9 +1,10 @@
 package netdisksign_test
 
 import (
-	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/netdisksign"
-	"testing"
+    "fmt"
+    "testing"
+
+    "github.com/iikira/BaiduPCS-Go/baidupcs/netdisksign"
 )
 
 func TestLocateDownloadSign(t *testing.T) {

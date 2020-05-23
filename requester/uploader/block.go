@@ -3,11 +3,12 @@ package uploader
 import (
 	"bufio"
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio/speeds"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
 	"io"
 	"os"
 	"sync"
+
+	"github.com/iikira/BaiduPCS-Go/requester/rio/speeds"
+	"github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 type (

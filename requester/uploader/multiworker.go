@@ -2,9 +2,10 @@ package uploader
 
 import (
 	"context"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/waitgroup"
-	"github.com/oleiade/lane"
 	"os"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/waitgroup"
+	"github.com/oleiade/lane"
 )
 
 type (

@@ -2,9 +2,10 @@ package pcsverbose
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/pcstime"
 	"io"
 	"io/ioutil"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/pcstime"
 )
 
 //PrintReader 输出Reader

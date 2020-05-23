@@ -1,8 +1,9 @@
 package uploader
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio"
 	"sync/atomic"
+
+	"github.com/iikira/BaiduPCS-Go/requester/rio"
 )
 
 type (

@@ -1,8 +1,9 @@
 package panhome
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
 )
 
 // SetSignExpires 设置sign过期

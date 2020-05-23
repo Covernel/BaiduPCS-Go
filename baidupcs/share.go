@@ -2,8 +2,9 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
 )
 
 type (

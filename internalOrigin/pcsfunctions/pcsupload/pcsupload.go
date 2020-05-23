@@ -2,7 +2,7 @@
 package pcsupload
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
+	"github.com/iikira/BaiduPCS-Go/pcsverbose"
 )
 
 const (

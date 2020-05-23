@@ -1,8 +1,9 @@
 package cachemap
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
 	"sync"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
 )
 
 var (

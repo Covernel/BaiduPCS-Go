@@ -4,10 +4,6 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/escaper"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/downloader"
 	"io"
 	"mime"
 	"net/http"
@@ -15,6 +11,11 @@ import (
 	"path"
 	"strconv"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/escaper"
+	"github.com/iikira/BaiduPCS-Go/requester/downloader"
 )
 
 const (

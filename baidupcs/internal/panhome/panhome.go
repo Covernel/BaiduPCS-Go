@@ -1,9 +1,10 @@
 package panhome
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
 	"net/url"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
+	"github.com/iikira/BaiduPCS-Go/requester"
 )
 
 const (

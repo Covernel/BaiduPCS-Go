@@ -2,9 +2,10 @@ package getip
 
 import (
 	"bytes"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
 	"net/http"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/iikira/BaiduPCS-Go/requester"
 )
 
 func IPInfoFromTechainBaiduByClient(c *requester.HTTPClient) (ipAddr string, err error) {

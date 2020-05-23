@@ -1,9 +1,10 @@
 package downloader
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
 	"sync"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
 )
 
 // ResetController 网络连接控制器

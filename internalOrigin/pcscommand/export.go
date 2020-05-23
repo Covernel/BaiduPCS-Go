@@ -3,14 +3,15 @@ package pcscommand
 import (
 	"container/list"
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/pcstime"
 	"os"
 	"path"
 	"strings"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/pcstime"
 )
 
 type (

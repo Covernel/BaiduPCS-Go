@@ -2,8 +2,9 @@ package checksum
 
 import (
 	"bytes"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
 	"path/filepath"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
 )
 
 // EqualLengthMD5 检测md5和大小是否相同

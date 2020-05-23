@@ -3,11 +3,12 @@ package checksum
 
 import (
 	"crypto/md5"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"hash/crc32"
 	"io"
 	"os"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 const (

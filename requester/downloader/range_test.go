@@ -2,8 +2,9 @@ package downloader_test
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/downloader"
 	"testing"
+
+	"github.com/iikira/BaiduPCS-Go/requester/downloader"
 )
 
 func TestRangeListGen(t *testing.T) {

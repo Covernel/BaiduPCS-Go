@@ -1,10 +1,11 @@
 package transfer
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio/speeds"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/requester/rio/speeds"
 )
 
 type (

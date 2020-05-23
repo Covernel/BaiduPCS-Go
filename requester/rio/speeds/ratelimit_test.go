@@ -2,9 +2,10 @@ package speeds_test
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio/speeds"
 	"testing"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/requester/rio/speeds"
 )
 
 func TestRateLimit(t *testing.T) {

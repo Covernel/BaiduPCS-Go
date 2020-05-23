@@ -2,11 +2,12 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"path"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/iikira/BaiduPCS-Go/pcsutil"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 // Isdir 检查路径在网盘中是否为目录

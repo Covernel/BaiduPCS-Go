@@ -1,9 +1,10 @@
 package pcsfunctions
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
 	"sync/atomic"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
 )
 
 type (

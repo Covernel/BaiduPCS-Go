@@ -1,7 +1,7 @@
 package baidupcs
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
+    "github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
 )
 
 type (

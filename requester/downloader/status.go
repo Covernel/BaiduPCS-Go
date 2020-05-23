@@ -1,7 +1,7 @@
 package downloader
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
+    "github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 type (

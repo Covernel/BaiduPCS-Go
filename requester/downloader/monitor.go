@@ -3,10 +3,11 @@ package downloader
 import (
 	"context"
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
 	"sort"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/pcsverbose"
+	"github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 var (

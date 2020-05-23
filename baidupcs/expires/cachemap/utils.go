@@ -1,7 +1,7 @@
 package cachemap
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
+    "github.com/iikira/BaiduPCS-Go/baidupcs/expires"
 )
 
 type (

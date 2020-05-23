@@ -2,12 +2,13 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcstable"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil"
-	"github.com/json-iterator/go"
 	"path"
 	"strconv"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/pcstable"
+	"github.com/iikira/BaiduPCS-Go/pcsutil"
+	"github.com/json-iterator/go"
 )
 
 type (

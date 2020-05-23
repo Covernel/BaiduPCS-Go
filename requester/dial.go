@@ -4,14 +4,15 @@ import (
 	"context"
 	"crypto/tls"
 	"errors"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/expires/cachemap"
 	mathrand "math/rand"
 	"net"
 	"net/http"
 	"net/url"
 	"strconv"
 	"time"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/expires/cachemap"
 )
 
 const (

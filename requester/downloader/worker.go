@@ -4,14 +4,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/rio/speeds"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
 	"io"
 	"net/http"
 	"sync"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/iikira/BaiduPCS-Go/pcsverbose"
+	"github.com/iikira/BaiduPCS-Go/requester"
+	"github.com/iikira/BaiduPCS-Go/requester/rio/speeds"
+	"github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 type (

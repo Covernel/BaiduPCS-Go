@@ -1,10 +1,11 @@
 package getip
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/jsonhelper"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester"
 	"net"
 	"net/http"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/jsonhelper"
+	"github.com/iikira/BaiduPCS-Go/requester"
 )
 
 type (

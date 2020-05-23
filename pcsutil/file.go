@@ -1,13 +1,14 @@
 package pcsutil
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsverbose"
-	"github.com/kardianos/osext"
 	"os"
 	"path"
 	"path/filepath"
 	"runtime"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/pcsverbose"
+	"github.com/kardianos/osext"
 )
 
 func IsPipeInput() bool {

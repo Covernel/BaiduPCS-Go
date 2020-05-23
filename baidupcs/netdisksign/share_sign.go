@@ -3,9 +3,10 @@ package netdisksign
 import (
 	"crypto/md5"
 	"encoding/hex"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"strconv"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 func ShareSURLInfoSign(shareID int64) []byte {

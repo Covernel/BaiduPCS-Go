@@ -1,9 +1,10 @@
 package converter_test
 
 import (
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"strings"
 	"testing"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 func TestTrimPathInvalidChars(t *testing.T) {

@@ -2,10 +2,11 @@ package downloader
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
-	"github.com/Denis-Oakley/BaiduPCS-Go/requester/transfer"
 	"io"
 	"os"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
+	"github.com/iikira/BaiduPCS-Go/requester/transfer"
 )
 
 // DoDownload 执行下载

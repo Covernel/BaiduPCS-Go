@@ -3,9 +3,10 @@ package transfer
 import (
 	"errors"
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/pcsutil/converter"
 	"sync"
 	"sync/atomic"
+
+	"github.com/iikira/BaiduPCS-Go/pcsutil/converter"
 )
 
 type (

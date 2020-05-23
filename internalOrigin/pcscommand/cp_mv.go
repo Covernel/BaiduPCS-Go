@@ -2,10 +2,11 @@ package pcscommand
 
 import (
 	"fmt"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs"
-	"github.com/Denis-Oakley/BaiduPCS-Go/baidupcs/pcserror"
 	"path"
 	"strings"
+
+	"github.com/iikira/BaiduPCS-Go/baidupcs"
+	"github.com/iikira/BaiduPCS-Go/baidupcs/pcserror"
 )
 
 // RunCopy 执行 批量拷贝文件/目录
